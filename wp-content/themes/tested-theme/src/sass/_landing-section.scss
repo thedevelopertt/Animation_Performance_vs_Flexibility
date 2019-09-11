@@ -5,6 +5,15 @@
     }
 }
 
+.landing-row{
+  @extend .row, .align-items-end, .py-5;
+  height: 90vh;
+}
+
+.landing-section{
+  height: 90vh;
+}
+
 .landing-action{
     @extend .col-sm-12, .text-center;
     a{
@@ -56,4 +65,12 @@
             left: -10px;
         }
     }
+}
+
+.landing-svg{
+  @extend .col-sm-12, .col-md-6, .col-lg-4, .offset-lg-4, .offset-md-3;
+
+  svg{
+    max-height: 45vh;
+  }
 }
