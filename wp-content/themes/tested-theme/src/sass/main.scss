@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
+$enable-responsive-font-sizes : true;
+$primary : #00C198;
+
 //@import "../../node_modules/foundation/scss/foundation";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -13,11 +17,12 @@
 //@import "../../node_modules/bootstrap/scss/images";
 //@import "../../node_modules/bootstrap/scss/reboot";
 
-$enable-responsive-font-sizes : true;
-
+@import "_landing-section";
 
 body{
-  color : $primary;
+  background-color : $black;
+  color: $white;
+
   padding: 0;
   margin: 0;
   //font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif

@@ -20,6 +20,9 @@ const _browserSyncProxy = "http://127.0.0.1/";
 let browserSyncProxy = _browserSyncProxy;
 exports.browserSyncProxy = browserSyncProxy;
 
+const _websitePath = "-development/fintech_v_1_0_0";
+let websitePath = _websitePath;
+
 //createProxyWithPath
 function _createProxyWithPath(path){
 
@@ -122,7 +125,7 @@ exports.initializePuppeteer = initializePuppeteer;
 //createBrowserSync
 async function _createBrowserSync(){
     await browsersync.init({
-        proxy : createProxyWithPath('-development'),
+        proxy : createProxyWithPath(websitePath),
         open: false
     });
 }
@@ -181,7 +184,7 @@ gulp.task("live-edit",async ()=>{
     await createBrowserSync();
     await connectLocalPuppeteer();
 
-    const _browserSyncUrl = "http://localhost:3000/-development/";
+    const _browserSyncUrl = "http://localhost:3000/"+websitePath;
     let browserSyncUrl = _browserSyncUrl;
     const _incognitoContext = await createIncognitoContext();
     //

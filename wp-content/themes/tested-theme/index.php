@@ -7,6 +7,24 @@
 </head>
 <body>
 
+<section class="landing-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+
+            </div>
+
+            <div class="landing-lead">
+                <p>France-based interactive design & creative web studio</p>
+            </div>
+
+            <div class="landing-action">
+                <a href="#"><span class="arrow-left"></span><span class="arrow-text">Discover the studio</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
 
