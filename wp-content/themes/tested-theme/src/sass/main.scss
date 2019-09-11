@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+//@import url("/dist/font/sailec-light.tff");
+//@import url("./dist/font/sailec-bold.tff");
+//@import url("./dist/font/sailec-thin.tff");
 
 
 $enable-responsive-font-sizes : true;
 $primary : #00C198;
+
 
 //@import "../../node_modules/foundation/scss/foundation";
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -17,7 +20,8 @@ $primary : #00C198;
 //@import "../../node_modules/bootstrap/scss/images";
 //@import "../../node_modules/bootstrap/scss/reboot";
 
-@import "_landing-section";
+@import "landing-section","landing-nav";
+
 
 body{
   background-color : $black;
@@ -25,7 +29,7 @@ body{
 
   padding: 0;
   margin: 0;
-  //font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif
+  //font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif
 }
 
 section{

@@ -1,0 +1,17 @@
+.landing-nav{
+  @extend .bg-white;
+  $nav-height : 10vh;
+  height: $nav-height;
+  .landing-logo{
+    @extend .col-md-6, .col-lg-3, .text-center;
+    img{
+      @extend .img-fluid;
+      max-width: 300px;
+    }
+  }
+
+  .nav-row{
+    @extend .row, .align-items-center;
+    height: $nav-height;
+  }
+}
