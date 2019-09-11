@@ -71,6 +71,12 @@
   @extend .col-sm-12, .col-md-6, .col-lg-4, .offset-lg-4, .offset-md-3;
 
   svg{
-    max-height: 45vh;
+    max-height: 40vh;
+  }
+
+  svg:hover{
+    transform: rotate(360deg);
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
   }
 }
