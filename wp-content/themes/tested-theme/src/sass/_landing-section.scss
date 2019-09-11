@@ -6,12 +6,12 @@
 }
 
 .landing-row{
-  @extend .row, .align-items-end, .py-5;
-  height: 90vh;
+  @extend .row, .align-items-end, .py-5 ;
+  min-height: 90vh;
 }
 
 .landing-section{
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .landing-action{
